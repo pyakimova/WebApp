@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML - часть 2</title>
+</head>
+<body>
+    <h1>Про спектр</h1>
+
+    <h2>
+    <font color="red" size="5" face="Arial">Каждый </font>
+    <font color="orange" size="5" face="Arial">охотник </font>
+    <font color="yellow" size="5" face="Arial">желает </font>
+    <font color="#32cd32" size="5" face="Arial">знать, </font>
+    <font color="#87ceeb" size="5" face="Arial">где </font>
+    <font color="blue" size="5" face="Arial">сидит </font>
+    <font color="#9400d3" size="5" face="Arial">фазан </font>
+    </h2>
+    <p>
+        Эту считалку знает каждый ребенок.
+        <br>Она про цвета, на которые расщепляется луч солнечного света после дождя <a href="#spectrumImage">Картинка спектра</a>.
+        <br>Такое явление можно наблюдать при возникновении радуги в небе.
+    </p>
+    <ol>
+        А цвета такие по порядку:
+        <li>Красный</li>
+        <li>Оранжевый</li>
+        <li>Желтый</li>
+        <li>Зеленый</li>
+        <li>Голубой</li>
+        <li>Синий</li>
+        <li>Фиолетовый</li>
+    </ol>
+
+    <h2>Видимый спектр</h2>
+    <span> В видимом спектре, опубликованном, например, в научной статье
+        <a href="https://scientificrussia.ru/articles/novyj-sposob-polucenia-vidimogo-sveta"
+           title="Новый способ получения видимого света"
+           target="_blank">&quot;Новый способ получения видимого света&quot;
+        </a>
+          ,<br>такие цвета:</span>
+    <br><img
+            id="spectrumImage"
+            src="https://scientificrussia.ru/images/r/29xr-large.jpg"
+            alt="Картинка видимого спектра"
+            width="500"
+            height="400"/>
+
+    <h2>В Проводнике</h2>
+    <p>В Проводнике в iOS спектр тегов выглядит следующим образом:</p>
+    <pre>
+        <img src="/WebApp/Html/html.png"  alt="Картинка спектра в Проводнике"/>
+        <table border="2">
+            <thead>
+                <tr><th>Цвет спектра</th><th>Цвет тэга в Проводнике</th><th colspan="2">Имеется расхождение</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Красный</td><td>Красный</td><td><input type="checkbox"/></td><td></td></tr>
+                <tr><td>Оранжевый</td><td>Оранжевый</td><td><input type="checkbox"/></td><td></td></tr>
+                <tr><td>Желтый</td><td>Желтый</td><td><input type="checkbox"/></td><td></td></tr>
+                <tr><td>Зеленый</td><td>Зеленый</td><td><input type="checkbox"/></td><td></td></tr>
+                <tr><td>Голубой</td><td></td><td><input type="checkbox" checked="checked"/></td><td>Отсутствует</td></tr>
+                <tr><td>Синий</td><td>Синий</td><td><input type="checkbox" checked="checked"/></td><td>Цвет голубой вместо синего</td></tr>
+                <tr><td rowspan="2">Фиолетовый</td><td></td><td rowspan="2"><input type="checkbox" checked="checked"/></td><td>Отсутствует</td></tr>
+                <tr><td>Лиловый</td><td>Лишний</td></tr>
+            </tbody>
+        </table>
+    </pre>
+    <hr/>
+    <pre>
+        <b>
+            <i>
+                <font color="#ee82ee" size="5" face="Arial">  Лиловый </font> <strong>это не</strong> <font color="#9400d3">Фиолетовый</font>
+            </i>
+        </b>
+    </pre>
+    <hr/>
+</body>
+</html>

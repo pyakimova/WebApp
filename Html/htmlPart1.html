@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML - часть 1</title>
+</head>
+<body>
+    <form action="https://academ-it-school.ru/"
+        method="post">
+        <!-- Мультиформ-параметры -->
+        <p>
+            <label for="textParameter">Ваше имя</label>
+            <input
+                    type="text"
+                    id="textParameter"
+                    name="textParameter"
+                    minlength="2"
+                    maxlength="20"
+                    placeholder="Имя"
+                    tabindex="0"
+                    autofocus
+                    required/>
+        </p>
+        <p>
+            <label for="passwordParameter">Ваш пароль</label>
+            <input
+                    type="password"
+                    id="passwordParameter"
+                    name="passwordParameter"
+                    minlength="6"
+                    placeholder="Пароль"
+                    tabindex="1"
+                    required/>
+        </p>
+        <p>
+            <label for="textareaParameter">Несколько слов о себе</label><br>
+            <textarea
+                    id="textareaParameter"
+                    name="textareaParameter"
+                    cols="50"
+                    rows="5"
+                    minlength="10"
+                    maxlength="250"
+                    placeholder="Родился в ... (продолжите)"></textarea>
+        </p>
+        <label tabindex="2">Ваше гражданство<br>
+            <input type="radio" id="radioParameterRus" name="radioParameter" value="rus" checked/>Россия<br>
+            <input type="radio" id="radioParameterBel" name="radioParameter" value="bel"/>Белоруссия<br>
+            <input type="radio" id="radioParameterKaz" name="radioParameter" value="kaz"/>Казахстан<br>
+        </label>
+        <p>
+            <label for="checkboxParameter">Ищете работу?</label>
+            <input type="checkbox" id="checkboxParameter" name="checkboxParameter" checked="checked"/>
+        </p>
+        <p>
+            <label for="fileParameterResume">Резюме</label>
+            <input type="file" id="fileParameterResume" name="fileParameterResume"/>
+        </p>
+        <p>
+            <label for="fileParameterAnketa">Анкета</label>
+            <input type="file" id="fileParameterAnketa" name="fileParameterAnketa"/>
+        </p>
+        <p>
+            <label for="hiddenParameter"></label>
+            <input type="hidden" id="hiddenParameter" name="hiddenParameter" value="Прислано с сайта"/>
+        </p>
+        <p>
+            <label for="selectParameters">Укажите любимые цвета</label>
+            <select id="selectParameters" name="selectParameters" size="5" multiple>
+                <option name="Red" value="red">Красный</option>
+                <option name="Orange" value="orange">Оранжевый</option>
+                <option name="Yellow" value="yellow">Желтый</option>
+                <option name="Green" value="green">Зеленый</option>
+                <option name="Blue" value="blue">Синий</option>
+                </select>
+        </p>
+        <p>
+            <label for="selectParameter">Укажите любимый город</label>
+            <select id="selectParameter" name="selectParameter" size="3">
+                <option name="Novosibirsk" value="nsk">Новосибирск</option>
+                <option name="Moscow" value="msk">Москва</option>
+                <option name="Tomsk" value="tsk">Томск</option>
+            </select>
+        </p>
+        <p>
+            <label for="dateParameter">Укажите дату рождения</label>
+            <input type="date" id="dateParameter" name="dateParameter"/>
+        </p>
+        <!-- Кнопочку отправки получилось сделать картинкой, но при этом в параметрах формы на сервер отправляются координаты этой кнопочки       -->
+        <p>
+            <input type="image" id="imageSubmitButton" src="sendButton.png" alt="Картинка для кнопки отправки формы" />
+        </p>
+
+        <button type="submit">Отправить</button>
+        <button type="reset">Очистить</button>
+    </form>
+    <p>
+        <a href="htmlPart2.html">Далее</a>
+    </p>
+</body>
+</html>
