@@ -44,16 +44,19 @@
                     placeholder="Родился в ... (продолжите)"></textarea>
         </p>
         <p tabindex="2">Ваше гражданство<br>
-            <input type="radio" id="radioParameterRus" name="radioParameter" value="rus" checked/>
-            <label for="radioParameterRus">Россия</label><br>
-            <input type="radio" id="radioParameterBel" name="radioParameter" value="bel"/>
-            <label for="radioParameterBel">Белоруссия</label><br>
-            <input type="radio" id="radioParameterKaz" name="radioParameter" value="kaz"/>
-            <label for="radioParameterKaz">Казахстан</label><br>
+            <label>
+                <input type="radio" name="radioParameter" value="rus" checked/>Россия
+            </label>
+            <label>
+                <input type="radio" name="radioParameter" value="bel"/>Белоруссия
+            </label>
+            <label>
+                <input type="radio" name="radioParameter" value="kaz"/>Казахстан
+            </label>
         </p>
         <p>
             <label for="checkboxParameter">Ищете работу?</label>
-            <input type="checkbox" id="checkboxParameter" name="checkboxParameter" checked="checked"/>
+            <input type="checkbox" id="checkboxParameter" name="checkboxParameter" checked="checked" value="yes"/>
         </p>
         <p>
             <label for="fileParameterResume">Резюме</label>
